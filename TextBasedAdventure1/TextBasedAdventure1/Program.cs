@@ -16,6 +16,7 @@
                 {
                     Console.WriteLine("The door chosen was the correct door!");
                     nonDeadEndDoorsOpened++;
+                    Console.WriteLine("The number of right doors opened is " + nonDeadEndDoorsOpened);
                 }
                 else
                 {
