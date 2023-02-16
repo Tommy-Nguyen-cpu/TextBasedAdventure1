@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBasedAdventure1", "TextBasedAdventure1\TextBasedAdventure1.csproj", "{7B63B6D5-D3AF-489A-ACCC-A6D2988EA87B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B63B6D5-D3AF-489A-ACCC-A6D2988EA87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B63B6D5-D3AF-489A-ACCC-A6D2988EA87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B63B6D5-D3AF-489A-ACCC-A6D2988EA87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B63B6D5-D3AF-489A-ACCC-A6D2988EA87B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC00CE4B-C695-4255-A398-49AAF6301CF0}
+	EndGlobalSection
+EndGlobal
