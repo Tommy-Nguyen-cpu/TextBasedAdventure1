@@ -1,10 +1,12 @@
-﻿public class Program
+﻿namespace TextBasedAdventure1
 {
+    public static class Program
+    {
 
-    public static void Main()
+        public static void Main()
         {
-        Console.WriteLine("Hello, you're now trapped in a dungeon. The only way out is through one of these doors.");
-        int nonDeadEndDoorsOpened = 0;
+            Console.WriteLine("Hello, you're now trapped in a dungeon. The only way out is through one of these doors.");
+            int nonDeadEndDoorsOpened = 0;
 
             while (nonDeadEndDoorsOpened != 5)
             {
@@ -24,31 +26,33 @@
             Console.WriteLine("You reached the exit, congrats!");
         }
 
-    static bool PlayerChoice()
-    {
-        Console.WriteLine("Two doors stand in front of you. Please enter 1 or 2 in order to choose one");
-        string Choice = Console.ReadLine();
-        (bool leftDoor, bool rightDoor) = GenerateDoor();
+        public static bool PlayerChoice()
+        {
+            Console.WriteLine("Two doors stand in front of you. Please enter 1 or 2 in order to choose one");
+            string Choice = Console.ReadLine();
+            (bool leftDoor, bool rightDoor) = GenerateDoor();
 
-        if (int.Parse(Choice) == 1)
-        {
-            return leftDoor;
+            if (int.Parse(Choice) == 1)
+            {
+                return leftDoor;
+            }
+            else
+            {
+                return rightDoor;
+            }
         }
-        else
-        {
-            return rightDoor;
-        }
-    }
 
-    static (bool, bool) GenerateDoor()
-    {
-        Random random = new Random();
-        int test = random.Next(0, 2);
-        if (test == 0)
+        public static (bool, bool) GenerateDoor()
         {
-            return (true, false);
+            Random random = new Random();
+            int test = random.Next(0, 2);
+            if (test == 0)
+            {
+                return (true, false);
+            }
+            return (false, true);
         }
-        return (false, true);
+
     }
 
 }
